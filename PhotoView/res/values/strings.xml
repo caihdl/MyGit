@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PhotoView</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="buttonText_photo">照片</string>
+    <string name="buttonText_video">视频</string>
+    
+</resources>
