@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="find_photo">0</integer>
+    <integer name="find_video">1</integer>
+    <integer name="find_allphoto">2</integer>
+    <integer name="find_allvideo">3</integer>
+    
+    <integer name="sortByYear">0</integer>
+    <integer name="sortByMonth">1</integer>
+    <integer name="sortByDay"> 2</integer>
+    <integer name="sortByNothing">3</integer>
+    
+</resources>

@@ -5,6 +5,7 @@ import java.net.URI;
 import java.util.ArrayList;
 
 import android.os.AsyncTask;
+import android.util.Log;
 
 public class ProgressTask extends AsyncTask<Integer, Void, ArrayList<URI>>{
     private ArrayList<URI> plist;
@@ -17,8 +18,10 @@ public class ProgressTask extends AsyncTask<Integer, Void, ArrayList<URI>>{
 	protected ArrayList<URI> doInBackground(Integer... type) {
 		switch (type[0])
 		{
+		   
 		   case 0:
 		   {
+			   Log.v("0","00000000");
 			   File files=new File("/storage/emulated/0/DCIM/Camera");
 			   plist = find(files,1);
 		   }
@@ -48,27 +51,29 @@ public class ProgressTask extends AsyncTask<Integer, Void, ArrayList<URI>>{
     	ArrayList<URI> qlist= new ArrayList<URI>();
     	String filename;
     	File[] flist = f.listFiles();
-    	for (File ff:flist)
-    	{
-    		filename=ff.getName();
-    		if (ff.listFiles()==null) {
-    			  if (check==0)
-    			  {
-    				  if (isvedio(filename))			 
-   		              {
-   		                  qlist.add(ff.toURI());
-   		              }
-    			  }
-    			  else 
-    			      if (isimg(filename))			 
+    	if (flist!=null){
+    		
+    	    for (File ff:flist)
+    	    {
+    		    filename=ff.getName();
+    		    if (!ff.isDirectory()) {
+    			      if (check==0)
+    			      {
+    				      if (isimg(filename))			 
+   		                  {
+   		                      qlist.add(ff.toURI());
+   		                  }
+    			      }
+    			      else if (isvideo(filename))			 
     		           {
     		              qlist.add(ff.toURI());
     		           }
-    		}
-    		else 
-    		{
-    			qlist.addAll(find(ff,check));
-    		}
+    		    }
+    		    else 
+    		    {
+    			    qlist.addAll(find(ff,check));
+    		    }
+    	    }
     	}
     	return qlist;
     }
@@ -80,7 +85,7 @@ public class ProgressTask extends AsyncTask<Integer, Void, ArrayList<URI>>{
     	if (x!=-1)
     	{
     		y=s.substring(x+1);
-    	    if ((y=="jpg") || (y=="bmp") || (y=="jpeg") || (y=="png"))
+    	    if (y.equals("jpg") || y.equals("bmp") || y.equals("jpeg") || y.equals("png"))
     	    {
     	       res=true;
     	    }
@@ -88,14 +93,14 @@ public class ProgressTask extends AsyncTask<Integer, Void, ArrayList<URI>>{
     	return res;
     }
     
-    protected boolean isvedio(String s){
+    protected boolean isvideo(String s){
     	int x=s.lastIndexOf('.');
     	boolean res=false;;
     	String y;
     	if (x!=-1)
     	{
     		y=s.substring(x+1);
-    	    if ((y=="mp4") || (y=="wmv") || (y=="mkv") || (y=="rmvb") || (y=="avi") || (y=="mpg"))
+    	    if (y.equals("mp4") || y.equals("wmv") || y.equals("mkv") || y.equals("rmvb") || y.equals("avi") || y.equals("mpg"))
     	    {
     	       res=true;
     	    }

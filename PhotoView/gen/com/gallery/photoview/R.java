@@ -1914,8 +1914,8 @@ containing a value of this type.
         public static final int always=0x7f090019;
         public static final int beginning=0x7f090020;
         public static final int buttonPanel=0x7f090036;
-        public static final int button_photo=0x7f090050;
-        public static final int button_video=0x7f090051;
+        public static final int button_photo=0x7f090051;
+        public static final int button_video=0x7f090052;
         public static final int checkbox=0x7f090038;
         public static final int collapseActionView=0x7f09001a;
         public static final int contentPanel=0x7f090031;
@@ -1935,6 +1935,11 @@ containing a value of this type.
         public static final int icon=0x7f09002b;
         public static final int ifRoom=0x7f09001b;
         public static final int image=0x7f090028;
+        public static final int img1=0x7f090055;
+        public static final int img2=0x7f090056;
+        public static final int img3=0x7f090057;
+        public static final int img4=0x7f090058;
+        public static final int line1=0x7f090050;
         public static final int listMode=0x7f09000a;
         public static final int list_item=0x7f09002a;
         public static final int middle=0x7f090022;
@@ -1943,7 +1948,7 @@ containing a value of this type.
         public static final int none=0x7f09000f;
         public static final int normal=0x7f09000b;
         public static final int parentPanel=0x7f09002d;
-        public static final int photo_list=0x7f090053;
+        public static final int photo_list=0x7f090054;
         public static final int progress_circular=0x7f090007;
         public static final int progress_horizontal=0x7f090008;
         public static final int radio=0x7f09003a;
@@ -1970,15 +1975,15 @@ containing a value of this type.
         public static final int src_over=0x7f090018;
         public static final int submit_area=0x7f09004b;
         public static final int tabMode=0x7f09000c;
-        public static final int test=0x7f090054;
+        public static final int test=0x7f090059;
         public static final int textSpacerNoButtons=0x7f090033;
         public static final int title=0x7f09002c;
         public static final int title_template=0x7f09002f;
         public static final int topPanel=0x7f09002e;
         public static final int up=0x7f090001;
         public static final int useLogo=0x7f090013;
-        public static final int video_list=0x7f090055;
-        public static final int viewpager=0x7f090052;
+        public static final int video_list=0x7f09005a;
+        public static final int viewpager=0x7f090053;
         public static final int withText=0x7f09001d;
         public static final int wrap_content=0x7f090009;
     }
@@ -2010,6 +2015,14 @@ containing a value of this type.
          showAsAction="ifRoom" items can fit. "always" items can override this. 
          */
         public static final int abc_max_action_buttons=0x7f080002;
+        public static final int find_allphoto=0x7f080005;
+        public static final int find_allvideo=0x7f080006;
+        public static final int find_photo=0x7f080003;
+        public static final int find_video=0x7f080004;
+        public static final int sortByDay=0x7f080009;
+        public static final int sortByMonth=0x7f080008;
+        public static final int sortByNothing=0x7f08000a;
+        public static final int sortByYear=0x7f080007;
     }
     public static final class layout {
         public static final int abc_action_bar_title_item=0x7f030000;
@@ -2045,7 +2058,8 @@ containing a value of this type.
         public static final int select_dialog_singlechoice_material=0x7f03001e;
         public static final int support_simple_spinner_dropdown_item=0x7f03001f;
         public static final int test=0x7f030020;
-        public static final int videolayout=0x7f030021;
+        public static final int title=0x7f030021;
+        public static final int videolayout=0x7f030022;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 

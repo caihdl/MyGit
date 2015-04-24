@@ -4,7 +4,6 @@ package com.gallery.photoview;
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
-
 import android.support.v4.app.Fragment;    
 import android.support.v4.app.FragmentActivity; 
 import android.support.v4.app.FragmentManager;
@@ -14,6 +13,7 @@ import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.support.v7.widget.Toolbar;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -36,6 +36,7 @@ public class MainActivity extends  FragmentActivity   {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		Log.v("0","01");
 		startSearch();
 		initview();
 		mViewPager = (ViewPager) findViewById(R.id.viewpager);
@@ -62,12 +63,12 @@ public class MainActivity extends  FragmentActivity   {
 		mphotoview.setOnClickListener(new click());
 		mvideoview = (TextView) findViewById(R.id.button_video);
 		mViews = new ArrayList<Fragment>();
-		photofragment= new PhotoFragment(List);
+		photofragment= new PhotoFragment(List,this,getResources().getInteger(R.integer.sortByNothing));
 		mViews.add(photofragment);
 		videofragment= new VideoFragment();
 		mViews.add(videofragment);
 		mAdapter = new FragAdapter(getSupportFragmentManager(),mViews);
-	
+	 
 		
 	}
 	
