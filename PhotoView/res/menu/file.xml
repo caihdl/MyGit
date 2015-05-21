@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.test.FileActivity" >                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+ 
+    
+    <item  
+        android:id="@+id/delete"  
+        android:title="删除"    
+        android:icon="@drawable/bin"  
+        app:showAsAction="always" />
+    
+    <item android:id="@+id/share"
+        android:title="分享"
+        android:icon="@drawable/share2"
+        app:showAsAction="always" /> 
+    
+    <item  
+        android:id="@+id/add"  
+        android:title="添加"    
+        android:icon="@drawable/camera"  
+        app:showAsAction="always" />
+
+</menu>

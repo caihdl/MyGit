@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.test.MainActivity" >
+    
+    <item android:id="@+id/count"
+        android:title=" " 
+        app:showAsAction="always"/>
+        
+    <item android:id="@+id/sort"
+        android:title="文件"
+        android:icon="@drawable/book_2"
+        app:showAsAction="always"/>
+     
+     <!--                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+    <item android:id="@+id/share"
+        android:title="分享"
+        android:icon="@drawable/share2"
+        app:showAsAction="always" /> -->
+    
+    <item  
+        android:id="@+id/add"  
+        android:title="添加"    
+        android:icon="@drawable/camera"  
+        app:showAsAction="always" />
+    
+    <item  
+        android:id="@+id/reflash"  
+        android:title="刷新"    
+        android:icon="@drawable/repeat_2"  
+        app:showAsAction="always" />
+
+</menu>

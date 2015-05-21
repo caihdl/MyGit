@@ -3,7 +3,10 @@
 
     <string name="app_name">PhotoView</string>
     <string name="hello_world">Hello world!</string>
-    <string name="buttonText_photo">照片</string>
+    <string name="buttonText_photo">图片</string>
     <string name="buttonText_video">视频</string>
+    <string name="title_activity_show_image">查看</string>
+    <string name="view_page">图片</string>
+    <string name="action_settings">0</string>
     
 </resources>
